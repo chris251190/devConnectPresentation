@@ -1,50 +1,122 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>DevConnect</h2>
+            <p>Develop & Share</p>
+        </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <section id="fragments">
+            <h2>What is DevConnect?</h2>
+            <p class="fragment">DevConnect is an open source platform for people that are interested in IT</p>
+        </section>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+        <section class="fragments">
+            <h2>Vision</h2>
+            <p class="fragment">The vision is to connect developers of all genders and ethnicities and make tech more diverse.</p>
+            <p class="fragment">It shall offer the possibility for people to work together on exciting community projects.</p>
+        </section>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+        <section class="fragments">
+            <h2>Values</h2>
+            <ul>
+            <li class="fragment">Respect, open-mindedness and tolerance</li>
+                <li class="fragment">Open communication & listening to others</li>
+            </ul>
+        </section>
+
+        <section class="fragments">
+            <h2>Focus group(s)</h2>
+            <ul>
+                <li class="fragment">Everyone interested in IT</li>
+                <li class="fragment">People who want to learn new IT skills in project work</li>
+                <li class="fragment">People who want to teach and share their IT knowledge</li>
+                <li class="fragment">People who are looking to collaborate on exciting new projects</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How does it work?</h2>
+            <section class="fragments">
+                <h4>Possible scenario 1</h4>
+                <p class="fragment">Lets say Tom wants to learn ReactJS and he is an experienced Java developer. He logs into DevConnect and updates his profile
+            so everybody can know that he could potentially teach Java. And then we have Lisa, she is a React programmer and wants to learn more about Java.
+            They could communicate over DevConnect and find a space where they could meet for exchanging their knowledge.</p>
+            </section>
+            <section class="fragments">
+                <h4>Possible scenario 2</h4>
+                <p class="fragment">Jana has no clue about programming but wants to realize an exciting project. Now she logs into DevConnect and
+                creates a project page where she will put the information on what the site is about. She doesn't care about any technical requirements. Now other people can see her project and discuss
+                about it and hopefully Jana will find enough people that will realize this project with her.
+                </p>
+
+            </section>
+        </section>
+
+        <section class="fragments">
+            <h2>Techstack</h2>
+            <p>Frontend</p>
+            <img class="fragment" width="150" height="170" data-src="images\react-logo.png">
+            <h4 class="fragment">or</h4>
+            <img class="fragment" width="150" height="170" data-src="images\vuejs-logo.jpg">
+        </section>
+
+        <section class="fragments">
+            <h2>Techstack</h2>
+            <p class="fragment">Backend</p>
+            <img class="fragment" width="500" height="210" data-src="images\node-express.png"><br>
+            <img class="fragment" width="500" height="210" data-src="images\mongodb.png">
+        </section>
+
+        <section>
+            <p>Thanks for your attention!</p>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
+        ]
+    });
+</script>
+</body>
 </html>
